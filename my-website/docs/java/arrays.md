@@ -48,9 +48,97 @@ The new operator allocates memory.
 
 The contents of the array are initialized to default values.
 
+```
 int[] myNumbers = new int[6];
+```
 
-Has to be the same type: int only int ; byte only byte
+:::caution Keep in mind
+Has to be the same type: int only int OR byte only byte
+:::
+
+## Array literals
+
+An array literal is defined using {}
+
+It sets the length to the given number of elements.
+
+```
+int[] myNumbers = {7, 3, 4, 5, 9};
+```
+**The length of array is 5.**
+
+## Accessing array elements
+To access an element in an array, use the index inside[]
+
+```
+int[] myNumbers = {7, 3, 4, 5, 9};
+
+int a = myNumbers[0]; // 7
+
+int b = myNumbers[2];  // 4
+
+int c = myNumbers[4];  // 9
+```
+
+## Assigning values 
+To assign a value to an element in an array, use the index inside []
+
+```
+myNumbers[0] = 10;
+
+myNumbers[1] = 0;
+
+myNumbers[4] = -8;
+```
+
+## Array exceptions
+
+**ArrayIndexOutOfBoundsException**
+
+Occurs when accessing an index out of bounds
+
+## Array length
+
+To access the length of the array, use .length
+
+```
+int[] nums = {7, 3, 4, 5, 9};
+
+int size = nums.length;
+```
+
+:::note
+There are no ( ) after **.length** because it is a **property** not a **method**.
+:::
+
+**Useful for accessing the last element**
+
+```
+int lastElement = nums[nums.length - 1];
+```
+
+## Reassignment
+
+We can reassign an array.
+
+```
+int[] nums = {7, 3, 4, 5, 9};
+
+nums = new int[10]; // valid 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
