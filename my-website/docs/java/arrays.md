@@ -2,8 +2,8 @@
 sidebar_position: 4
 sidebar_label: 'Arrays'
 ---
-
-# Definition
+# Arrays
+## Definition
 A container that holds a fixed number of values of a single type.
 
 Each value has an index starting with 0
@@ -139,17 +139,16 @@ nums = {7, 8, 9}; // invalid because already initialized
 nums = new int[] {7, 8, 9}; // valid 
 ```
 
-:::tip
-Is the following code valid?
+:::danger Watch out
 
 ```
 String[] names = {“Bob”, “Sue”, “Joe”};
 
 names[3] = “Tom”;
 ```
-No, it will throw an IndexOutOfBoundException
+**This will throw an IndexOutOfBoundException**
 
-Because the last index is length - 1 = 2
+**Because the last index is length - 1 = 2**
 :::
 
 

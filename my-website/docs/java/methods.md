@@ -3,7 +3,8 @@ sidebar_position: 3
 sidebar_label: 'Methods'
 ---
 
-# What is a method?
+# Methods
+## What is a method?
 
 - A block of instructions.
 - A block of code used to perform some operation.

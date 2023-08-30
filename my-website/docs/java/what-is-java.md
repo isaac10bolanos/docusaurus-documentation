@@ -2,7 +2,9 @@
 sidebar_position: 1
 ---
 
-# What is Java?
+# Java
+
+## What is Java?
 
 Java is a high-level, object-oriented, and platform-independent programming language. It was first developed by Sun Microsystems (now owned by Oracle Corporation) in the mid-1990s. Java is known for its "write once, run anywhere" capability, which means that Java code can be written on one platform and executed on any platform with a compatible Java Virtual Machine (JVM).
 
