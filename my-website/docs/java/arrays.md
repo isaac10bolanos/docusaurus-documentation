@@ -127,6 +127,32 @@ int[] nums = {7, 3, 4, 5, 9};
 nums = new int[10]; // valid 
 ```
 
+**Array constants can only be used in initializers.**
+
+```
+int nums = {7, 3, 4, 5, 9};
+
+nums = new int[10]; // valid          length = 10
+
+nums = {7, 8, 9}; // invalid because already initialized
+
+nums = new int[] {7, 8, 9}; // valid 
+```
+
+:::tip
+Is the following code valid?
+
+```
+String[] names = {“Bob”, “Sue”, “Joe”};
+
+names[3] = “Tom”;
+```
+No, it will throw an IndexOutOfBoundException
+
+Because the last index is length - 1 = 2
+:::
+
+
 
 
 
