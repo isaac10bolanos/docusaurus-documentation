@@ -139,16 +139,16 @@ nums = {7, 8, 9}; // invalid because already initialized
 nums = new int[] {7, 8, 9}; // valid 
 ```
 
-:::danger Watch out
+:::caution
 
 ```
 String[] names = {“Bob”, “Sue”, “Joe”};
 
 names[3] = “Tom”;
 ```
-**This will throw an IndexOutOfBoundException**
-
-**Because the last index is length - 1 = 2**
+**Is this code correct or not correct?**
+<button onClick={() => alert('This will throw an IndexOutOfBoundException.  Because the last index is length - 1 = 2')}>Correct</button>
+<button onClick={() => alert('You are right!')}>Not Correct</button>
 :::
 
 

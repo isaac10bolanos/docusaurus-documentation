@@ -62,6 +62,39 @@ public static void eat(int qty, String food) {
 }
 ```
 
+## Method Overriding
+
+Is taking the same method signature and parameters and replacing it with it's own implementation.
+
+```jsx title="Cat class"
+public class Cat {
+
+	private String name;
+
+	public Cat(String name) {
+		this.name = name;
+	}
+
+	public void speak() {
+		System.out.println(name + " likes to say Meow");
+	}
+}
+```
+
+```jsx title="Tiger class"
+public class Tiger extends Cat {
+
+	public Tiger(String name) {
+		super(name);
+	}
+
+	@Override
+	public void speak() {
+		System.out.println(getName() + " does not say Meow, he ROARS!");
+	}
+}
+```
+
 
 
 
