@@ -105,7 +105,7 @@ const config = {
               },
               {
                 label: 'MySQL',
-                to: '/docs/mysql',
+                to: '/docs/mysql/what-is-myql',
               },
             ],
           },
