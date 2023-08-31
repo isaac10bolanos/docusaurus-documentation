@@ -30,8 +30,14 @@ nums[5] = 7;
 ## Try-catch statement
 
 You can try-catch statement to handle exceptions.
+
 Wrap risky code inside the try { } and then your error
-Handling code inside the catch() { } you NEED a catch for every try
+
+Handling code inside the catch() { } 
+
+:::note
+You NEED a **Catch** for every **Try.**
+:::
 
 
 
