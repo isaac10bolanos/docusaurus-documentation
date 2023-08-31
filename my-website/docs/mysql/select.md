@@ -52,7 +52,7 @@ SELECT Name, Composer, UnitPrice FROM track;
 **The order I query for columns is the order they are returned in.**
 :::
 
-## Filter
+## Where clauses
 
 I can filter the data that is returned by my select queries.
 
@@ -66,7 +66,7 @@ SELECT * FROM track WHERE TrackId > 3000;
 SELECT * FROM track WHERE TrackId = 200;
 ```
 
-**Where clauses use the same logical operators we use in Java**
+### Logical operators
 
 - Greater than >
 - Less than <
@@ -80,8 +80,72 @@ SELECT * FROM track WHERE TrackId >= 3000;
 SELECT * FROM track WHERE TrackId <= 1000;
 ```
 
-**Additional logical opeators**
+### Additional logical opeators
 
 - ! -> in SQL it is **NOT**
 - || -> in SQL it is **OR**
 - && -> in SQL it is **AND**
+
+```
+SELECT * FROM track WHERE AlbumId > 200 AND AlbumId < 300;
+
+SELECT * FROM track WHERE NOT UnitPrice = 0.99;
+
+SELECT * FROM track WHERE Composer = 'Green Day' OR Composer = 'Pearl Jam';
+```
+
+:::tip Note
+**Select statements retrieve, but never change data.**
+:::
+
+## Order by clause
+
+You can use an order by clause to re-order the data that is returned.
+
+**ORDER BY** can use two more keywords and those are:
+
+- **ASC** - Ascending order
+- **DESC** - Descending order
+
+```
+SELECT * FROM invoice WHERE Total > 4.00 ORDER BY total DESC;
+
+SELECT * FROM invoice WHERE BillingCountry = 'USA' ORDER BY BillingState;
+```
+
+## Wildcards for Like clause
+
+**Can use wild cards to select in the case of being unsure of spelling or to pattern match.**
+
+Two main wildcards you use to match Strings:
+
+- % mean any number of characters, the placement does matter
+- _ means any one character, the placement does matter
+
+To search/pattern match on Strings you use the **LIKE** keyword
+
+---
+
+```
+SELECT * FROM track WHERE Composer LIKE '%Steven Tyler%';
+```
+**The above says select every columns from Track where the Composer has Stephen Tyler in it.**
+
+---
+
+---
+```
+SELECT * FROM track WHERE Composer LIKE '%A%' ORDER BY Composer;
+```
+**Grab every column from Track where Composer starts with the letter A**
+
+---
+
+---
+
+```
+SELECT * FROM track WHERE Composer LIKE '_C%' ORDER BY Composer DESC;
+```
+**Grab every column from Track where the second character of Composer is C and only 2 characters long**
+
+---
