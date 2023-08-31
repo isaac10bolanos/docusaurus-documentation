@@ -8,11 +8,8 @@ sidebar_label: 'Select Queries'
 ## Syntax
 
 - Main main MaIn MaiN - in java these are 4 different things
-
 - In SQL they are the same thing, SQL is not case sensitive for keywords
-
 - Statements in SQL end in ;
-
 - Whitespace does not matter, but semi-colons do
 
 **Anytime you want to grab data you use a SELECT query**
@@ -72,12 +69,19 @@ SELECT * FROM track WHERE TrackId = 200;
 **Where clauses use the same logical operators we use in Java**
 
 - Greater than >
-
 - Less than <
-
 - = equal to (not a ==)
-
 - Greater than or equal to <=
-
 - Less than or equal to <= 
 
+```
+SELECT * FROM track WHERE TrackId >= 3000;
+
+SELECT * FROM track WHERE TrackId <= 1000;
+```
+
+**Additional logical opeators**
+
+- ! -> in SQL it is **NOT**
+- || -> in SQL it is **OR**
+- && -> in SQL it is **AND**
