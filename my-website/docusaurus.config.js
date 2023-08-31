@@ -104,8 +104,8 @@ const config = {
                 to: '/docs/docker/what-is-docker',
               },
               {
-                label: 'Documents',
-                to: '/docs/intro',
+                label: 'MySQL',
+                to: '/docs/mysql',
               },
             ],
           },
