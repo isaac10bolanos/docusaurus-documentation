@@ -96,6 +96,20 @@ Anything that isn't an error or a runtime exception is checked.
 
 Can list out multiple exceptions as being thrown by your method.
 
+```jsx title="Checked Exceptions"
+	public static void moreExceptions() throws IOException, CloneNotSupportedException {
+
+		throw new ImATeapotException();
+	}
+```
+
+Even though i wrote this line, Java has no idea it's going to crash.
+
+Java doesn't look for them and doesn't make sure you know how to handle them.
+
+Throw says I want an exception to be thrown.
+
+
 
 
 
