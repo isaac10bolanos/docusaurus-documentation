@@ -81,12 +81,7 @@ const config = {
             href: 'https://github.com/isaac10bolanos/docusaurus-documentation',
             label: 'GitHub',
             position: 'right',
-          },
-          {
-            href: 'https://www.linkedin.com/in/isaac-bolanos-94ba83244/',
-            label: 'LinkedIn',
-            position: 'right',
-          },
+          },        
         ],
       },
       footer: {
