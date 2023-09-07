@@ -39,22 +39,8 @@ Execution Engine: Interprets and executes the bytecode.
 Garbage Collector: Manages memory, automatically deallocating objects that are no longer needed.
 Usage: The JVM is the runtime engine that executes Java applications. It ensures that Java code is platform-independent by running bytecode on the host operating system.
 
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
-
-This is a Markdown page
-```
-
-```mdx title="Java Tutorial"
-
-```
 
 
 
-```jsx title="Tutorial"
-
-blah blah blah
-
-```
 
 
